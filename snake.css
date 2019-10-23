@@ -1,0 +1,66 @@
+html {
+    font-family: Helvetica;
+    background-color: black;
+}
+
+@font-face {
+font-family: "Futura";
+src: url("font/futura.ttf");
+}
+
+#board {
+    position: relative;
+    width: calc(40 * 30px);
+    margin: auto;
+}
+
+#board div {
+    position: relative;
+    background-color: black;
+    box-sizing: border-box;
+    float: left;
+    width: 30px;
+    height: 30px;
+    z-index: -1;
+
+}
+
+#board .snake {
+    position: static;
+    background-color: lime;
+    box-shadow: 0px 0px 20px 4px lime;
+    z-index: 1;
+}
+
+#board .apple {
+    position: static;
+    background-color: red;
+    box-shadow: 0px 0px 20px 4px red;
+    z-index: 1;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: 'Futura';
+  color: lime;
+  text-shadow: 0 0 5px lime, 0 0 10px lime, 0 0 20px lime, 0 0 30px lime;
+  text-align: center;
+}
+
+#scoretext {
+  padding-left: 15%;
+  display: inline;
+}
+
+#score {
+  display: inline;
+}
+
+#highscoretext {
+  padding-left: 40%;
+  display: inline;
+}
+
+#highscore {
+  display: inline;
+}
