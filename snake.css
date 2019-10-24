@@ -1,66 +1,90 @@
 html {
-    font-family: Helvetica;
-    background-color: black;
+  font-family: Helvetica;
+  background-color: black;
 }
 
+button {
+  background-color: black;
+  font-family: futura;
+  border: none;
+  color: white;
+  padding: 50px 100px;
+  font-size: 50px;
+  transition: .5s;
+  display: block;
+  margin-left: 37%;
+  margin-top: 15%;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: lime;
+  border-color: lime;
+  color: black;
+  box-shadow: 0px 0px 20px 4px lime;
+}
 @font-face {
-font-family: "Futura";
-src: url("font/futura.ttf");
+  font-family: "Futura";
+  src: url("font/futura.ttf");
 }
 
 #board {
-    position: relative;
-    width: calc(40 * 30px);
-    margin: auto;
+  position: relative;
+  width: calc(40 * 30px);
+  margin: auto;
 }
 
 #board div {
-    position: relative;
-    background-color: black;
-    box-sizing: border-box;
-    float: left;
-    width: 30px;
-    height: 30px;
-    z-index: -1;
-
+  position: relative;
+  background-color: black;
+  box-sizing: border-box;
+  float: left;
+  width: 30px;
+  height: 30px;
+  z-index: -1;
 }
 
 #board .snake {
-    position: static;
-    background-color: lime;
-    box-shadow: 0px 0px 20px 4px lime;
-    z-index: 1;
+  position: static;
+  background-color: lime;
+  box-shadow: 0px 0px 20px 4px lime;
+  z-index: 1;
 }
 
 #board .apple {
-    position: static;
-    background-color: red;
-    box-shadow: 0px 0px 20px 4px red;
-    z-index: 1;
+  position: static;
+  background-color: red;
+  box-shadow: 0px 0px 20px 4px red;
+  z-index: 1;
 }
 
 h1 {
-  font-size: 60px;
+  margin-top: 0;
+  font-size: 50px;
   font-family: 'Futura';
   color: lime;
-  text-shadow: 0 0 5px lime, 0 0 10px lime, 0 0 20px lime, 0 0 30px lime;
+  text-shadow: 0 0 5px lime, 0 0 10px lime, 0 0 20px lime;
+}
+
+#title {
+  font-size: 60px;
   text-align: center;
 }
 
 #scoretext {
-  padding-left: 15%;
-  display: inline;
+  margin-left: 15%;
+  display: inline-block;
 }
 
 #score {
-  display: inline;
+  display: inline-block;
 }
 
 #highscoretext {
-  padding-left: 40%;
-  display: inline;
+  margin-left: 45%;
+  display: inline-block;
 }
 
 #highscore {
-  display: inline;
+  display: inline-block;
 }

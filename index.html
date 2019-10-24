@@ -5,15 +5,17 @@
     <title>Snake</title>
     <link rel="stylesheet" href="snake.css">
     <script src="snake.js"></script>
+	<script src="konami.js"></script>
 </head>
 
-<body onload="initGame()" onkeydown="keyPress(event)">
-    <h1>Snake Game</h1>
+<body onkeydown="keyPress(event)">
+
+    <h1 id="title">Snake Game</h1>
     <h1 id="scoretext"> Score: </h1>
     <h1 id="score"> 0 </h1>
     <h1 id="highscoretext">Highscore: </h1>
     <h1 id="highscore"> 0 </h1>
+    <button id="button" onclick="initGame(); delButton();"> Click To Play!</button>
     <div id="board"></div>
 </body>
-
 </html>
